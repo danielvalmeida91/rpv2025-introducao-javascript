@@ -3,10 +3,17 @@ const usernameInput = document.querySelector("#username")
 const passwordInput = document.querySelector("#password")
 
 function validaInformacoes(username, password) {
-    if(username.length > 6 && password.length > 8) 
-        return alert("Validado com sucesso !")
+    if(username.length > 6 && password.length > 8) {
+        alert("Validado com sucesso !")
+        return resetForm()
+    }
     
     return alert('Ocorreram erros em sua validação !')
+}
+
+function resetForm(){
+    usernameInput.value = ""
+    passwordInput.value = ""
 }
 
 formLogin.addEventListener('submit', (event) => {
