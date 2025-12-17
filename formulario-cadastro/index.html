@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de Cadastro</title>
-    <script src="scr"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Formulário de cadastro
@@ -26,6 +26,7 @@
             <div>
                 <label for="nome">Nome *: </label>
                 <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                <span id="text-error-nome" style="display: none;">Nome obrigatório</span>
             </div>
             <div>
                 <label for="email">Email *: </label>
@@ -46,7 +47,7 @@
             </div>
 
             <div>
-                <button>Enviar</button>
+                <button id="btn-submit">Enviar</button>
                 <button type="reset">Limpar</button>
             </div>
         </form>
